@@ -59,6 +59,7 @@ void loop() {
         airQuality = analogRead(0);
         temperature = digitalRead(2);
         humidity = digitalRead(2);
+        Serial.println(airQuality);
         if (airQuality <= 90) { // Luftqualität ist gut
            digitalWrite(7, HIGH); // Schaltet grüne LED an
            digitalWrite(8, LOW); // Schaltet gelbe LED aus
